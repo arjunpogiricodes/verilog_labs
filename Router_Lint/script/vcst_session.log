@@ -1,0 +1,291 @@
+
+                                   VC Static 
+
+                 Version T-2022.06 for linux64 - May 30, 2022 
+
+                    Copyright (c) 2010 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+restore_session -level default
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MasterSourceFile vc_lint.tcl
+#Liberty files are needed for logical and physical netlist designs
+set search_path "../"
+set link_library " "
+set_app_var enable_lint true
+configure_lint_setup -goal lint_rtl
+analyze -verbose -format verilog "../../Router1X3/rtl/fifo_router_16x9_rtl.v"
+[Info] DB_COPT044: Calling VCS: '$VCS_HOME/bin/vlogan  -kdb=common_elab /home1/B110/PogiRiArjun/VLSI_RN/Verilog_labs/Router_Lint/script/vcst_rtdb/.internal/design/undef_vcs.v -Xvd_opts=-silent,+disable_message+C00373,-ssy,-ssv,-ssz -file /home1/B110/PogiRiArjun/VLSI_RN/Verilog_labs/Router_Lint/script/vcst_rtdb/.internal/design/analyzeCmd1 -Xufe=parallel:incrdump  -full64 '.
+                         Chronologic VCS (TM)
+         Version T-2022.06_Full64 -- Sat Aug 31 09:55:56 2024
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file '/home1/B110/PogiRiArjun/VLSI_RN/Verilog_labs/Router_Lint/script/vcst_rtdb/.internal/design/undef_vcs.v'
+Parsing design file '../../Router1X3/rtl/fifo_router_16x9_rtl.v'
+CPU time: .089 seconds to compile
+analyze -verbose -format verilog "../../Router1X3/rtl/register_router.v "
+[Info] DB_COPT044: Calling VCS: '$VCS_HOME/bin/vlogan  -kdb=common_elab /home1/B110/PogiRiArjun/VLSI_RN/Verilog_labs/Router_Lint/script/vcst_rtdb/.internal/design/undef_vcs.v -Xvd_opts=-silent,+disable_message+C00373,-ssy,-ssv,-ssz -file /home1/B110/PogiRiArjun/VLSI_RN/Verilog_labs/Router_Lint/script/vcst_rtdb/.internal/design/analyzeCmd2 -Xufe=parallel:incrdump  -full64 '.
+                         Chronologic VCS (TM)
+         Version T-2022.06_Full64 -- Sat Aug 31 09:55:56 2024
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file '/home1/B110/PogiRiArjun/VLSI_RN/Verilog_labs/Router_Lint/script/vcst_rtdb/.internal/design/undef_vcs.v'
+Parsing design file '../../Router1X3/rtl/register_router.v'
+CPU time: .087 seconds to compile
+analyze -verbose -format verilog "../../Router1X3/rtl/synchronizer_router.v"
+[Info] DB_COPT044: Calling VCS: '$VCS_HOME/bin/vlogan  -kdb=common_elab /home1/B110/PogiRiArjun/VLSI_RN/Verilog_labs/Router_Lint/script/vcst_rtdb/.internal/design/undef_vcs.v -Xvd_opts=-silent,+disable_message+C00373,-ssy,-ssv,-ssz -file /home1/B110/PogiRiArjun/VLSI_RN/Verilog_labs/Router_Lint/script/vcst_rtdb/.internal/design/analyzeCmd3 -Xufe=parallel:incrdump  -full64 '.
+                         Chronologic VCS (TM)
+         Version T-2022.06_Full64 -- Sat Aug 31 09:55:56 2024
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file '/home1/B110/PogiRiArjun/VLSI_RN/Verilog_labs/Router_Lint/script/vcst_rtdb/.internal/design/undef_vcs.v'
+Parsing design file '../../Router1X3/rtl/synchronizer_router.v'
+
+Error-[SE] Syntax error
+  Following verilog source has syntax error :
+  "../../Router1X3/rtl/synchronizer_router.v", 80: token is ';'
+  wire count_0 = (out_fifo_0_counter == 6'd29) ? 1'b1;1'b0
+                                                      ^
+
+
+Error-[SE] Syntax error
+  Following verilog source has syntax error :
+  "../../Router1X3/rtl/synchronizer_router.v", 80: token is '1'b0'
+  wire count_0 = (out_fifo_0_counter == 6'd29) ? 1'b1;1'b0
+                                                          ^
+
+
+Error-[SE] Syntax error
+  Following verilog source has syntax error :
+  "../../Router1X3/rtl/synchronizer_router.v", 81: token is '1'b0'
+  wire count_1 = (out_fifo_1_counter == 6'd29) ? 1'b1;1'b0
+                                                          ^
+
+
+Error-[SE] Syntax error
+  Following verilog source has syntax error :
+  "../../Router1X3/rtl/synchronizer_router.v", 82: token is '1'b0'
+  wire count_2 = (out_fifo_2_counter == 6'd29) ? 1'b1;1'b0
+                                                          ^
+
+
+Error-[IND] Identifier not declared
+../../Router1X3/rtl/synchronizer_router.v, 130
+  Identifier 'count_1' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+
+
+Error-[IND] Identifier not declared
+../../Router1X3/rtl/synchronizer_router.v, 159
+  Identifier 'count_2' has not been declared yet. If this error is not 
+  expected, please check if you have set `default_nettype to none.
+  
+
+6 errors
+CPU time: .081 seconds to compile
+Error: 0
+	Use error_info for more info. (CMD-013)
+analyze -verbose -format verilog "../../Router1X3/rtl/sm_router_controller.v"
+[Info] DB_COPT044: Calling VCS: '$VCS_HOME/bin/vlogan  -kdb=common_elab /home1/B110/PogiRiArjun/VLSI_RN/Verilog_labs/Router_Lint/script/vcst_rtdb/.internal/design/undef_vcs.v -Xvd_opts=-silent,+disable_message+C00373,-ssy,-ssv,-ssz -file /home1/B110/PogiRiArjun/VLSI_RN/Verilog_labs/Router_Lint/script/vcst_rtdb/.internal/design/analyzeCmd4 -Xufe=parallel:incrdump  -full64 '.
+                         Chronologic VCS (TM)
+         Version T-2022.06_Full64 -- Sat Aug 31 09:55:57 2024
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file '/home1/B110/PogiRiArjun/VLSI_RN/Verilog_labs/Router_Lint/script/vcst_rtdb/.internal/design/undef_vcs.v'
+
+Warning-[SFCORW] Source file cannot be opened
+  Source file "../../Router1X3/rtl/sm_router_controller.v" cannot be opened 
+  for reading due to 'No such file or directory'.
+  It will be skipped.
+  
+  
+
+CPU time: .083 seconds to compile
+analyze -verbose -format verilog "../../Router1X3/rtl/router_top.v"
+[Info] DB_COPT044: Calling VCS: '$VCS_HOME/bin/vlogan  -kdb=common_elab /home1/B110/PogiRiArjun/VLSI_RN/Verilog_labs/Router_Lint/script/vcst_rtdb/.internal/design/undef_vcs.v -Xvd_opts=-silent,+disable_message+C00373,-ssy,-ssv,-ssz -file /home1/B110/PogiRiArjun/VLSI_RN/Verilog_labs/Router_Lint/script/vcst_rtdb/.internal/design/analyzeCmd5 -Xufe=parallel:incrdump  -full64 '.
+                         Chronologic VCS (TM)
+         Version T-2022.06_Full64 -- Sat Aug 31 09:55:57 2024
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file '/home1/B110/PogiRiArjun/VLSI_RN/Verilog_labs/Router_Lint/script/vcst_rtdb/.internal/design/undef_vcs.v'
+Parsing design file '../../Router1X3/rtl/router_top.v'
+
+Warning-[IPDW] Identifier previously declared
+../../Router1X3/rtl/router_top.v, 23
+  Second declaration for identifier 'busy' ignored
+  Identifier 'busy' previously declared as output port. 
+  [../../Router1X3/rtl/router_top.v, 10]
+
+
+Warning-[IPDW] Identifier previously declared
+../../Router1X3/rtl/router_top.v, 27
+  Second declaration for identifier 'error' ignored
+  Identifier 'error' previously declared as output port. 
+  [../../Router1X3/rtl/router_top.v, 10]
+
+CPU time: .086 seconds to compile
+waive_lint -tag  STARC05-2.5.1.2  -add clock_waive 
+elaborate router_top
+Doing common elaboration 
+Final timescale is '1ps/1ps'
+
+Error-[IPC-E] Illegal port connection
+../../Router1X3/rtl/router_top.v, 48
+  Register 'error' is illegally connected to output port "error" of module 
+  "register_router", instance "REGISTER".
+  Source info: register_router REGISTER(clk, reset, pkt_valid, data_in, 
+  fifo_full, rst_int_reg, detect_add, ld_state, laf_state, full_state, 
+  lfd_state, parity_done, low_pkt_ ...
+
+
+Error-[IPC-E] Illegal port connection
+../../Router1X3/rtl/router_top.v, 55
+  Register 'data_out_0' is illegally connected to output port "data_out" of 
+  module "fifo_16x9_router", instance "FIFO1".
+  Source info: fifo_16x9_router FIFO1(clk, reset, data_out, write_enb[0], 
+  read_enb_0, soft_reset_0, lfd_state, full_0, empty_0, data_out_0);
+
+
+Error-[IPC-E] Illegal port connection
+../../Router1X3/rtl/router_top.v, 56
+  Register 'data_out_1' is illegally connected to output port "data_out" of 
+  module "fifo_16x9_router", instance "FIFO2".
+  Source info: fifo_16x9_router FIFO2(clk, reset, data_out, write_enb[1], 
+  read_enb_1, soft_reset_1, lfd_state, full_1, empty_1, data_out_1);
+
+
+Error-[IPC-E] Illegal port connection
+../../Router1X3/rtl/router_top.v, 57
+  Register 'data_out_2' is illegally connected to output port "data_out" of 
+  module "fifo_16x9_router", instance "FIFO3".
+  Source info: fifo_16x9_router FIFO3(clk, reset, data_out, write_enb[2], 
+  read_enb_2, soft_reset_2, lfd_state, full_2, empty_2, data_out_2);
+
+4 errors
+Importing Symbol Libraries...
+  Failed to import the "default_u" library because the library files cannot be found in the library paths.
+---Any error or warning message, please refer to /home1/B110/PogiRiArjun/VLSI_RN/Verilog_labs/Router_Lint/script/vcst_rtdb/verdi/elabcomLog/libCompiler.log---
+
+
+ common elaboration failed
+Verdi KDB elaboration done and the database successfully generated: 0 error(s), 0 warning(s)
+[Error] DB_COPT012: VCS reader failed
+	No scm file is generated, thus no NLDM is created.
+Error: 0
+	Use error_info for more info. (CMD-013)
+check_lint
+[Info] Running goal lint_rtl
+[Warning] DB_COPT056: No design(s) found.
+	Please load design and try again.
+eval {;}
+report_lint -verbose -file report_lint_router.txt
+
+exit
+=======================================================
+Total Time(S)  :32.49
+CPU Time(S)    :14.67
+Peak Memory(MB):2573
+=======================================================
